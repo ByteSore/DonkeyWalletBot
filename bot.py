@@ -97,4 +97,4 @@ async def on_message(message):
         else:
             await message.channel.send('<@{0.author.id}>. Your wallet has is not of a correct format.'.format(message)) 
 
-client.run('OTM1Njk5NDQzODU1MDAzNjc5.YfCcAw.N-PAcL7WzynJgr1DEcqwRWxnc0I')
+client.run('<BOT TOKEN>')
