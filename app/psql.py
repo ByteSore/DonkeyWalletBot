@@ -1,11 +1,11 @@
 #!/usr/bin/python
 import psycopg2
-from config import config
+from config import dbconfig
 
 def query(sql, data):
     conn = None
     try:
-        params = config()
+        params = dbconfig()
         conn = psycopg2.connect(**params)
         cur = conn.cursor()
         cur.execute(sql,data)
@@ -20,7 +20,7 @@ def selectone(sql, data):
     conn = None
     results = None
     try:
-        params = config()
+        params = dbconfig()
         conn = psycopg2.connect(**params)
         cur = conn.cursor()
 
@@ -38,7 +38,7 @@ def select(sql, data):
     conn = None
     results = None
     try:
-        params = config()
+        params = dbconfig()
         conn = psycopg2.connect(**params)
         cur = conn.cursor()
 
@@ -55,4 +55,3 @@ def select(sql, data):
 def dc(conn):
     if conn is not None:
         conn.close()
-
