@@ -27,7 +27,7 @@ class CheckCog(commands.Cog):
                 logging.error("error: " + err)
 
 
-        bot.run("OTM1Njk5NDQzODU1MDAzNjc5.YfCcAw.IULfQZ1Y0cudN1X9OUv-H-0w3dQ")
+        bot.run("")
 
 def setup(bot):
     bot.add_cog(CheckCog(bot))
