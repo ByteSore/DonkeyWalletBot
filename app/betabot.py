@@ -27,6 +27,6 @@ async def on_ready():
     await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="DonkeTunes"))
     print(f'Successfully logged in and booted...!')
 
-bot.run("OTM3Mjg3ODEwMzkyNjc0MzA1.YfZjSw.1h4pzeJV6kyO8pJ2GKfvBOU44Zw")
+bot.run("<TOKEN>")
 
 
